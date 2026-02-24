@@ -1,2 +1,3 @@
 # JAVA-PREP
-Java preparation and assignments
+Tripillar Solutions – Java Coding Assignments  
+Organized module-wise as per syllabus.
