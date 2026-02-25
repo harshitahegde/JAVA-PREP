@@ -19,7 +19,7 @@ public class FactorialRecursion {
         System.out.println("invalid number");
         }
         else{
-            System.out.println("Factorial of a number is"+fact(n) );
+            System.out.println("Factorial of a number is"+ fact(n) );
         }
       
         }
