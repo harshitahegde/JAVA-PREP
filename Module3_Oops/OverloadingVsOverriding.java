@@ -1,41 +1,30 @@
 package Module3_Oops;
-class Shape {
-    void area() {
-        System.out.println("Area:");
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+    void display() {
+        System.out.println(" Calculator");
     }
 }
-class Circle extends Shape {
-    double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-
+class AdvCalculator extends Calculator {
     @Override
-    void area() {
-        System.out.println("Area of Circle: " + (3.14 * radius * radius));
+    void display() {
+        System.out.println("Adv Calculator");
     }
 }
-class Rectangle extends Shape {
-    double length, width;
-
-    Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
-    }
-
-    @Override
-    void area() {
-        System.out.println("Area of Rectangle: " + (length * width));
-    }
-}
-
 public class OverloadingVsOverriding {
     public static void main(String[] args) {
-        Shape s1 = new Circle(6);    
-        Shape s2 = new Rectangle(6, 6); 
-        s1.area();  
-        s2.area(); 
+        Calculator calc = new Calculator();
+        System.out.println("Sum of 2 numbers: " + calc.add(5, 10));
+        System.out.println("Sum of 3 numbers: " + calc.add(5, 10, 15));
+        Calculator advCalc = new AdvCalculator();
+        advCalc.display();  
     }
+  
 }
 
